@@ -1,0 +1,346 @@
+
+/* 
+
+
+*/
+
+
+/* utilities */
+
+body{
+    padding: 0;
+    margin: 0;
+}
+img{
+    max-width: 100%;
+    height: auto;
+     
+}
+
+ul{
+    padding: 0;
+}
+ul li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+
+.custom_container{
+    padding: 0 170px;
+    margin: auto;
+}
+
+/* Root var */
+:root {
+   --font: 'Roboto', sans-serif;
+   --main-color:#674A27;
+   --color-two:#998274;
+}
+
+
+
+
+/* nav menu */
+.main-menu {
+    overflow: hidden;
+    padding: 0 20px;
+}
+#menu {
+    display: flex;
+    justify-content: right;
+    margin-right: -20px;
+    align-items: center;
+}
+#menu span.bar {
+    background-color: #998274;
+    height: 77px;
+    width: 100px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+.bd-logo {
+    display: flex;
+    align-items: end;
+}
+.bd-logo img {
+    margin-bottom: 8px;
+}
+.banner-half {
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    min-height: 503px;
+}
+.sidenav, .closebtn {
+    position: relative;
+    top: 0px;
+    right: 0px;
+    width: 50px;
+    z-index: 5;
+}  
+
+.sidenav {
+    /* height: 100%; */
+    height: auto;
+    width: 0;
+    position: absolute;
+    /* position: fixed; */
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: rgba(255,255,255,95%);
+    overflow-x: hidden;
+    transition: 0.5s;
+    box-shadow: 0px 0px 6px darkgray;
+}
+
+.sidenav a, .dropdown-btn {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 16px;
+    color: #998274;
+    display: block;
+    border: none;
+    background: none;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+}
+.closeb a.closebtn {
+    background-color: #998274;
+    height: 77px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+.closeb {
+    display: flex;
+    justify-content: end;
+}
+.lenguage {
+    color: #674A27;
+    text-decoration: none;
+    margin-right: 27px;
+    background-color: #fff !important;
+    padding: 2px 20px !important;
+    font-size: 15px !important;
+    font-family: 'Roboto', sans-serif;
+}
+.closeb .lenguage {
+    color: #674A27;
+}
+.hoverlangu {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+.dropdown-container {
+    display: none;
+    padding-left: 8px;
+}
+ 
+.fa-caret-down {
+    float: right;
+    padding-right: 8px;
+}
+.closebtn {
+    margin-right: -12px!important;
+}
+.nav-menu {
+    max-width: 390px;
+    padding-left: 122px;
+}
+.nav-menu ul > li {
+    margin-bottom: 15px;
+}
+.nav-menu ul  li a{
+    font-family: var(--font);
+}
+.nav-menu ul li ul > li {
+    margin-left: 32px;
+    margin-bottom: 10px;
+}
+.nav-menu ul ul {
+    margin: 20px 0;
+}
+
+.nav-menu ul ul > li a {
+    color: #777;
+    letter-spacing: 2px;
+}
+
+.nav-menu ul > li:hover > a {
+    font-weight: bold;
+}
+.angle{
+    position: relative;
+}
+.angle::after {
+    content: '';
+    display: block;
+    clear: both;
+    width: 18px;
+    height: 15px;
+    background-image: url("../images/angle.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 4px;
+    right: -27px;
+}
+.sub-menu {
+    display: none;
+}
+.sub-menu.show {
+    display: block;
+}
+
+
+/* header banner */
+.head_title {
+    text-align: center;
+    margin-top: 90px;
+}
+.head_title h1 {
+    color: var(--main-color);
+    font-size: 40px;
+    font-family: var(--font);
+}
+.head_title p {
+    color: #998274;
+    font-size: 15px;
+    font-family: var(--font);
+}
+.cat-list {
+    max-width: 600px;
+    margin: auto;
+    text-align: center;
+    margin-top: 100px;
+}
+.cat-list ul li a {
+    background-color: #998274;
+    color: #fff;
+    padding: 5px 15px;
+    border-radius: 50px;
+    display: inline-block;
+    font-family: var(--font);
+    font-size: 15px;
+    margin-right: 20px;
+    margin-bottom: 25px;
+}
+.cat-list ul li {
+    display: inline;
+    text-align: center;
+}
+
+/* bar heading */
+.bar_heading{
+    text-align: center;
+    margin-top: 74px;
+}
+.bar_heading h2{
+    color: var(--main-color);
+    font-size: 40px;
+    font-family: var(--font);
+    margin-bottom: 12px;
+}
+.bar_heading p{
+    color: #998274;
+    font-size: 15px;
+    font-family: var(--font);
+}
+.mid-content {
+    display: flex;
+    align-items: center;
+}
+.image_width_content {
+    margin-top: 57px;
+    margin-bottom: 39px;
+}
+.contant_area_left h3 {
+    font-size: 16px;
+    color: var(--color-two);
+    margin-bottom: 35px;
+    font-family: var(--font);
+}
+.contant_area_left p {
+    font-size: 15px;
+    color: #777777;
+    font-family: var(--font);
+    letter-spacing: 26px;
+}
+.contant_area_left p {
+    font-size: 15px;
+    color: #777777;
+    font-family: var(--font);
+    letter-spacing: 2px;
+    line-height: 22px;
+}
+
+/* product section area */
+#product .card {
+    border: none;
+    background-color: transparent;
+    text-align: center;
+}
+#product .card h5 {
+    color: #777;
+    font-size: 14px;
+    font-family: var(--font);
+}
+
+/* button section area */
+.button_section {
+    text-align: center;
+    margin: 50px 0;
+}
+.fullbtn {
+    background-color: #998274;
+    color: #fff;
+    padding: 20px 110px;
+    border-radius: 5px;
+    font-family: var(--font);
+    font-size: 16px;
+}
+.fullbtn {
+    background-color: #998274;
+    color: #fff;
+    padding: 20px 110px;
+    border-radius: 5px;
+    font-family: var(--font);
+    font-size: 16px;
+    display: inline-block;
+    cursor: pointer;
+    border:1px solid transparent;
+}
+.fullbtn:hover{
+    color:#998274;
+    background-color: transparent;
+    border: 1px solid #998274;
+}
+.button_section {
+    margin-bottom: 200px;
+}
+.fullbtn_fff{
+    border: 1px solid #998274;
+    color: #998274;
+    padding: 20px 110px;
+    border-radius: 5px;
+    font-family: var(--font);
+    font-size: 16px;
+    display: inline-block;
+    cursor: pointer;
+}
+.fullbtn_fff:hover{
+    background-color:#998274 ;
+    border:1px solid transparent;
+    color: #fff;
+}
